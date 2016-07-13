@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pnu.ntc.b.appapinya.apinyaburisri.traffic_kinggy.MainActivity"
+    android:background="@drawable/wall22">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/txtTitle"
+        android:textSize="@dimen/h1"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textbotton"
+        android:onClick="clickSound"
+        android:id="@+id/btnSound"
+        android:layout_alignParentBottom="true"
+        android:background="@color/material_deep_teal_500"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/h1" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:background="#78ffffff"
+        android:layout_below="@+id/txtTitle"
+        android:layout_above="@+id/btnSound"
+        android:layout_margin="20dp" />
+</RelativeLayout>
